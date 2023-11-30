@@ -1,0 +1,42 @@
+@page
+@model logicLearn.Pages.Cursos.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Cursos</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Curso[0].NombreCurso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Curso[0].Precio)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Curso) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreCurso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.CursoID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.CursoID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.CursoID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

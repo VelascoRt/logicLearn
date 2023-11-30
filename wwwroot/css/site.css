@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(154,212,95,1) 100%);
+}
+th {
+  color: white;
+}
+td {
+  color: white;
+}
+
+.title {
+  width: 80rem;
+  height: 45.375rem;
+  flex-shrink: 0;
+  border-radius: 53rem;
+  background: #FFF;
+  text-align: center;
+  display: flexbox;
+}
+
+.title h1 {
+  text-justify: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: 200;
+  font-size: 2rem;
+}
+
+.title h4 {
+  margin-top: 15%;
+  font-family: 'Montserrat', sans-serif;
+  font-style: 300;
+  font-size: 4rem;
+}
+
+.title .btn {
+  margin-top: 10%;
+  height: 4rem;
+  width: 8rem;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cursos h1 {
+  margin-top: 5%;
+  text-align: center;
+  width: 73rem;
+  height: 4.125rem;
+  flex-shrink: 0;
+  background: #FFF;
+  border-radius: 1rem;
+}
+
+.cursos .card{
+  margin: 3rem 0 0 0;
+  align-items: center;
+}
+
+.cursos .card .btn{
+  margin-left: 25%;
+}
+
+.cursos .card h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: 400;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.cursos .card p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: 300;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
